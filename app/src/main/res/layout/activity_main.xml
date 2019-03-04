@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tee="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/animation"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:text="animatin"
-        android:layout_gravity="center"/>
+    <com.example.testonapi22.CustomTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        tee:left_button_drawable="@mipmap/ic_launcher"
+        tee:title_background_color="@color/green"
+        tee:title_text="标题1"/>
+    <com.example.testonapi22.CustomTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        tee:left_button_vision="false"
+        tee:title_background_color="@color/green"
+        tee:title_text="标题2"/>
+    <com.example.testonapi22.CustomTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        tee:right_button_vision="false"
+        tee:title_background_color="@color/red"
+        tee:title_text="标题3"/>
 
 </LinearLayout>
