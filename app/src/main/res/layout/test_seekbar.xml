@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@null">
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/testplay" />
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:text="time"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/play"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/text_size" />
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentEnd="true"
+        android:text="time"
+        android:layout_marginBottom="0dp"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/text_size" />
+
+    <SeekBar
+        style="@style/SeekBarStyle"
+        android:id="@+id/play_progress"
+        android:layout_marginTop="8dp"
+        android:paddingTop="2.5dp"
+        android:paddingBottom="2.5dp"
+        android:layout_toEndOf="@id/play"
+        android:thumb="@null"
+        android:max="1000"
+        android:maxHeight="4dp"
+        android:minHeight="4dp"
+        android:progress="0"
+        />
+</RelativeLayout>
